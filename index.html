@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <title>OLX Clone - Zohaib Farooq</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+  <style></style>
+</head>
+
+<body>
+  <!-- Fixed Top Navigation -->
+  <div class="top-navbar-container">
+    <nav class="top-navbar">
+      <div class="left-section">
+        <div class="logo">OLX</div>
+        <div class="categories">
+          <div class="cat-item">
+            <div class="roundimg">
+              <img src="iconMotors.6bf280165e43e55b173d0a53551e2bfb.png" alt="" />
+            </div>
+            Motors
+          </div>
+          <div class="cat-item">
+            <div class="roundimg">
+              <img src="iconProperty.d09c6d2e3621f900c17c9e8330a1a37b.png" alt="" />
+            </div>
+            Property
+          </div>
+        </div>
+      </div>
+
+      <div class="right-section">
+        <i class="fa-regular fa-comment"></i>
+        <i class="fa-regular fa-bell"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <div class="cbd">
+          <div class="profile-img">
+            <img src="./443554718-240x180.jpeg" alt="" />&nbsp;&nbsp;&nbsp;
+          </div>
+          <i class="fa-solid fa-angle-down abcd"></i>
+        </div>
+        <button class="sell-btn">
+          <i class="fa-solid fa-plus"></i> SELL
+        </button>
+        <button class="hamburger-menu">
+          <i class="ri-menu-unfold-line"></i>
+          <i class="ri-menu-unfold-line"></i>
+          <i class="ri-menu-unfold-line"></i>
+        </button>
+      </div>
+    </nav>
+
+    <div class="center-section">
+      <div class="location-box">
+        <i class="fa-solid fa-location-dot"></i>
+        <input type="text" placeholder="Pakistan" />
+        <i class="fa-solid fa-angle-down"></i>
+      </div>
+
+      <div class="search-box">
+        <input type="text" placeholder="Find Cars, Mobile Phones and more..." />
+        <button class="search-btn">
+          <i class="fa-solid fa-magnifying-glass"></i> Search
+        </button>
+      </div>
+    </div>
+
+    <!-- Fixed Bottom Links with Shadow -->
+    <div class="bottom-links-container">
+      <nav class="bottom-links">
+        <ul>
+          <li>
+            <strong>All Categories</strong>
+            <i class="fa-solid fa-angle-down"></i>
+          </li>
+          <li>Mobile Phones</li>
+          <li>Cars</li>
+          <li>Motorcycles</li>
+          <li>Houses</li>
+          <li>Video-Audios</li>
+          <li>Tablets</li>
+          <li>Land & Plots</li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="menu-header">
+      <h3>Menu</h3>
+      <button class="close-menu" id="closeMenu">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li>
+        <strong>All Categories</strong><i class="fa-solid fa-angle-down"></i>
+      </li>
+      <li>Mobile Phones</li>
+      <li>Cars</li>
+      <li>Motorcycles</li>
+      <li>Houses</li>
+      <li>Video-Audios</li>
+      <li>Tablets</li>
+      <li>Land & Plots</li>
+      <li>Motors</li>
+      <li>Property</li>
+    </ul>
+  </div>
+  <div class="menu-overlay" id="menuOverlay"></div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <section>
+      <div class="banner-container">
+        <div class="moveitcontainer">
+          <img src="https://images.olx.com.pk/thumbnails/580407179-800x600.webp" alt="Banner 1" />
+        </div>
+      </div>
+      <div class="exchange-banner">
+
+
+        <!-- Marquee showing currency exchange rates -->
+        <marquee class="top-marquee" behavior="scroll" direction="left" scrollamount="6">
+          <span class="item">
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="_525d90ba">
+              <g clip-path="url(#clip0_1450_4194)">
+                <path d="M16.87 0h-17a2 2 0 0 0-2 2v11c0 1.1.9 2 2 2h17a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" fill="#fff">
+                </path>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M-2.13 10h21v5h-21v-5z" fill="#151515"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M-2.13 0h21v5h-21V0z" fill="#249F58"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M-2.13 0v15h6V0h-6z" fill="#F93939"></path>
+              </g>
+              <defs>
+                <clipPath id="clip0_1450_4194">
+                  <rect width="15" height="15" rx="7.5" fill="#fff"></rect>
+                </clipPath>
+              </defs>
+            </svg>
+            <strong>Emirates Dirham </strong> (AED) <br />
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buy: <strong>76.50</strong> | Sell: <strong>77.80</strong>
+          </span>
+
+          <span class="item">
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="_525d90ba">
+              <rect width="15" height="15" rx="7.5" fill="#F93939"></rect>
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M11 8.65l-1.16.61.22-1.3-.94-.9 1.3-.2L11 5.7l.58 1.17 1.3.2-.94.9.22 1.3" fill="#fff"></path>
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M6.5 11a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zm1-1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" fill="#fff">
+              </path>
+            </svg>
+            <strong>Turkish Lira </strong> (TRY) <br />
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buy: <strong>7.50</strong> | Sell: <strong>7.50</strong>
+          </span>
+
+          <span class="item">
+            <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg" class="_525d90ba">
+              <rect width="15" height="15" rx="7.5" fill="#0052B4"></rect>
+              <path fill="#FFDA44"
+                d="M7.5 2.4l.26.63h.6l-.52.36.2.63-.54-.36-.53.36.19-.63-.51-.36h.59zM10.38 3.3l-.09.67.52.3-.63.05-.15.64-.28-.58-.64.05.48-.45-.27-.57.52.3zM12.2 5.12l-.4.54.3.52-.58-.27-.45.48.05-.64-.58-.28.64-.15.06-.63.3.52zM13.1 7.5l-.63.26v.6l-.36-.52-.63.2.36-.54-.36-.53.63.19.36-.51v.59zM12.2 9.88l-.67-.09-.3.52-.05-.63-.64-.15.58-.28-.05-.64.45.48.57-.27-.3.52zM10.38 11.7l-.54-.4-.52.3.27-.58-.48-.45.64.05.28-.58.15.64.63.06-.52.3zM7.5 12.6l-.26-.63h-.6l.52-.36-.2-.63.54.36.53-.36-.19.63.51.36h-.59zM4.62 11.7l.09-.67-.52-.3.63-.05.15-.64.28.58.64-.05-.48.45.27.57-.52-.3zM2.8 9.88l.4-.54-.3-.52.58.27.45-.48-.05.64.58.28-.64.15-.06.63-.3-.52zM1.9 7.5l.63-.26v-.6l.36.52.63-.2-.36.54.36.53-.63-.19-.36.52v-.6zM2.8 5.12l.67.09.3-.52.05.63.64.15-.58.28.05.64-.45-.48-.57.27.3-.52zM4.62 3.3l.54.4.52-.3-.27.58.48.45-.64-.05-.28.58-.15-.64-.63-.06.52-.3z">
+              </path>
+            </svg>
+            <strong>Euro </strong>(EUR) <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buy: <strong>325.50</strong> | Sell: <strong>328.75</strong>
+          </span>
+
+          <span class="item">
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="_525d90ba">
+              <g clip-path="url(#clip0_1450_4192)">
+                <rect width="15" height="15" rx="7.5" fill="#fff"></rect>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0h9v7H0V0z" fill="#1A47B8"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M9 0v1h12V0H9zm0 2v1h12V2H9zm0 2v1h12V4H9zm0 2v1h12V6H9zM0 8v1h21V8H0zm0 2v1h21v-1H0zm0 2v1h21v-1H0zm0 2v1h21v-1H0z"
+                  fill="#F93939"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M1 1v1h1V1H1zm2 0v1h1V1H3zm2 0v1h1V1H5zm2 0v1h1V1H7zM6 2v1h1V2H6zM4 2v1h1V2H4zM2 2v1h1V2H2zM1 3v1h1V3H1zm2 0v1h1V3H3zm2 0v1h1V3H5zm2 0v1h1V3H7zM1 5v1h1V5H1zm2 0v1h1V5H3zm2 0v1h1V5H5zm2 0v1h1V5H7zM6 4v1h1V4H6zM4 4v1h1V4H4zM2 4v1h1V4H2z"
+                  fill="#fff"></path>
+              </g>
+              <defs>
+                <clipPath id="clip0_1450_4192">
+                  <rect width="15" height="15" rx="7.5" fill="#fff"></rect>
+                </clipPath>
+              </defs>
+            </svg>
+            <strong>US Dollar </strong> (USD) <br />
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buy: <strong>278.00</strong> | Sell: <strong>281.00</strong>
+          </span>
+
+          <span class="item">
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="_525d90ba">
+              <g clip-path="url(#clip0_1450_4193)">
+                <rect width="15" height="15" rx="7.5" fill="#1A47B8"></rect>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M-.77 0H-3v2.5L15.75 15H18v-2.5L-.77 0z" fill="#fff">
+                </path>
+                <path d="M-2.25 0L18 13.54V15h-.73L-3 1.45V0h.75z" fill="#F93939"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16 0h2v2.5S5.01 10.83-1 15h-2v-2.5L16 0z" fill="#fff">
+                </path>
+                <path d="M18 0h-.68L-3 13.55V15h.75L18 1.46V0z" fill="#F93939"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M4.64 0h5.74v4.63H18v5.74h-7.62V15H4.64v-4.63H-3V4.63h7.64V0z" fill="#fff"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M5.84 0h3.32v5.77H18v3.46H9.16V15H5.84V9.23H-3V5.77h8.84V0z" fill="#F93939"></path>
+              </g>
+              <defs>
+                <clipPath id="clip0_1450_4193">
+                  <rect width="15" height="15" rx="7.5" fill="#fff"></rect>
+                </clipPath>
+              </defs>
+            </svg>
+            <strong>British Pound </strong> (GBP) <br />
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buy: <strong>350.50</strong> | Sell: <strong>354.00</strong>
+          </span>
+
+          <span class="item">
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="_525d90ba">
+              <rect width="15" height="15" rx="7.5" fill="#249F58"></rect>
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M13 10V9H2l2 1h6c0 .55.67 1 1.5 1s1.5-.45 1.5-1zM5.73 3.9l-.05.03c-.06.03-.16.14-.17.27 0 .07-.01.07.03.12.04.05.07.05.14 0a.15.15 0 0 0 .07-.09c.01-.08-.09.04-.1-.05-.02-.08.04-.12.1-.2 0-.04 0-.07-.02-.07zm1 .01c-.02 0-.04.03-.07.09-.03.06-.13.16-.05.35.06.12.08.32.05.54l-.1.15c-.08.09-.16.06-.22.03-.06-.04-.11-.06-.14-.18 0-.2.02-.54-.02-.6-.05-.11-.14-.08-.18-.04a1.4 1.4 0 0 0-.33.68c-.05.16-.1.11-.14.05-.1-.1-.1-.77-.21-.66-.18.51.1 1.08.3 1.02.14.06.23-.2.28-.5.04-.09.07-.1.1-.05-.01.39.02.48.12.6.23.17.41.02.43 0l.17-.17c.04-.04.1-.04.15 0 .05.04.05.12.16.18.1.04.3.01.35-.07l.1-.2c.06-.05.13-.02.13 0 0 .03-.05.06-.02.12.06.04.07.02.1 0 .12-.04.2-.3.2-.3 0-.08-.04-.08-.08-.06-.04.03-.04.04-.09.06-.05.01-.16.05-.22-.03-.05-.1-.05-.24-.1-.34 0-.01-.07-.16 0-.17.03 0 .1.03.12-.04.04-.06-.08-.23-.15-.31-.07-.07-.16-.08-.25 0-.06.05-.05.11-.07.18a.29.29 0 0 0 .06.25c.06.12.18.28.14.5 0 0-.07.1-.18.09-.05-.01-.13-.03-.17-.34-.03-.23 0-.56-.1-.71-.01-.06-.03-.12-.06-.11zm-.31.03c-.03 0-.07.04-.1.1a1.7 1.7 0 0 0-.04.32c-.02.08.08.12.13.01.07-.19.07-.27.07-.34 0-.06-.03-.1-.06-.1zm1.17.02c-.03 0-.06.02-.07.07 0 .1 0 .16.02.25 0 .06.1.16.14.22.2.27.4.54.59.83a12.42 12.42 0 0 1 .08 2.1c.08 0 .21-.13.26-.34.03-.28 0-.86-.01-1.02l-.01-.24c.22.36.43.74.64 1.15.07-.03.06-.46.01-.52-.16-.36-.4-.72-.47-.85a6.99 6.99 0 0 0-.22-.35 5.2 5.2 0 0 0-.06-.48c-.04-.24.1.03.08-.11-.04-.24-.18-.4-.33-.62-.05-.07-.05-.09-.13.02-.04.1-.04.19-.03.27a2.38 2.38 0 0 0-.08-.1l-.26-.22c-.03-.03-.1-.07-.15-.06zm3.47.03c-.01 0-.03 0-.05.04a.2.2 0 0 0-.07.16l.04.38.01.05-.03-.04c-.25-.26.11-.04-.05-.24-.13-.15-.17-.2-.29-.29-.06-.03-.1-.1-.11.02-.01.1-.02.23-.01.32 0 .05.05.14.1.2l.5.64c.03.46.04.88.08 1.33 0 .2-.07.46-.12.48 0 0-.1.05-.15 0-.04-.02-.21-.28-.21-.28-.09-.08-.15-.06-.2 0-.18.16-.26.47-.37.68-.03.05-.11.09-.2 0-.24-.33-.1-.79-.13-.67-.21.24-.12.63-.07.72.07.14.12.23.26.3.12.08.22.03.27-.04.12-.12.13-.45.18-.52.04-.12.15-.1.2-.04.05.07.1.11.17.15.12.1.26.12.4.03.09-.06.15-.12.2-.26.06-.15.03-.97.02-1.43l.26.38c.03.4.05.79.04 1.17-.01.07.26-.23.26-.37v-.34l.38.64c.07-.04.05-.46 0-.52-.12-.21-.29-.44-.41-.62l-.08-.56c-.02-.13-.04-.32-.08-.47a1.48 1.48 0 0 1-.03-.26c.02-.04.07 0 .1-.04.04-.05-.14-.52-.24-.66-.03-.06-.1-.04-.16.06-.07.07-.05.21-.02.35.07.36.13.73.18 1.1l-.31-.46-.02-.07-.02-.36c0-.03-.01-.04.02-.03l.05.03c.03 0 .06-.04.04-.1l-.3-.53c0-.01-.01-.02-.03-.02zM2.1 4c-.05 0-.1.03-.09.1-.01.03.1.15.13.22.02.04-.02.2.02.2.03.02.08-.1.1-.2.01-.07 0-.27-.14-.31H2.1zm10.22 0l-.05.07a.63.63 0 0 0-.05.4c.13.88.23 1.75.25 2.53-.01.08-.01.12-.05.21-.08.1-.16.23-.24.29-.08.06-.25.12-.31.16-.18.1-.18.22-.04.23.25-.03.55-.05.75-.36.05-.08.12-.32.12-.46.02-.83-.01-1.64-.14-2.25 0-.06-.03-.19-.02-.2.01-.05.1 0 .12-.05.05-.04-.2-.37-.3-.5-.01-.04-.02-.07-.04-.06zm-2.6.02l-.05.05c-.07.23-.1.41-.07.56.18.93.36 1.77.33 2.66.09 0 .19-.2.23-.39.02-.26-.02-.43-.02-.58-.01-.16-.18-1.42-.21-1.53-.05-.22.16-.03.14-.16-.07-.16-.25-.4-.3-.54-.03-.04-.03-.08-.05-.07zm-6.33.02a.07.07 0 0 0-.05.05l-.01.06c-.01 0-.05 0-.05-.05l-.02-.05h-.03l-.02.02-.01.04c0 .02-.01.03-.02.03h-.03l-.02-.03v-.05l-.04-.02c-.06 0-.07.08-.06.1 0 .02-.01.15.08.19.12.06.35.03.34-.16v-.1l-.06-.03zm1.62 0a.26.26 0 0 0-.1.03c-.09.08-.1.2-.04.28.06.03.12.09.08.12-.17.19-.63.5-.65.55v.01c.03.02.31.02.34 0 .1-.04.56-.56.56-.56l-.07-.06c-.02-.02-.02-.04 0-.07.12-.06.08-.21.02-.28A.29.29 0 0 0 5 4.04zm4.25 0l-.05.07a.76.76 0 0 0-.08.39c.11.82.15 1.54.23 2.36 0 .08 0 .19-.06.24-.2.2-.48.45-.78.57-.04.03.08.19.23.19.25-.03.46-.17.67-.54a.95.95 0 0 0 .15-.4 8.83 8.83 0 0 0-.17-2.09V4.7c.03-.02.08 0 .1-.05.05-.04-.1-.4-.2-.54-.01-.03-.02-.06-.04-.06zm-6.58.03c-.03 0-.07.03-.08.07v.38c.07.21.08.4.11.61.01.3-.16.13-.16-.01.04-.2.03-.49 0-.56-.03-.08-.06-.1-.13-.08-.06 0-.2.15-.24.4 0 0-.04.14-.05.26-.02.13-.1.23-.17-.02-.05-.18-.09-.62-.17-.52-.03.35-.06.95.23 1.01.36.04.16-.6.29-.7.02-.06.07-.06.07 0v.54c0 .18.11.23.2.27.1-.01.15 0 .19.08l.05.93s.2.06.22-.52c0-.34-.07-.63-.02-.7 0-.06.08-.07.14-.04.1.07.13.15.28.12.22-.06.35-.17.35-.34a1.37 1.37 0 0 0-.1-.48c.01-.02-.04-.1-.03-.13.04.06.1.06.11 0-.03-.12-.1-.24-.19-.29-.07-.07-.19-.05-.23.09-.02.16.06.36.18.52.03.06.06.16.05.25-.07.04-.13.02-.18-.03 0 0-.18-.13-.18-.16.05-.3.01-.33-.01-.41-.02-.12-.07-.15-.12-.23-.04-.05-.1-.05-.13 0-.08.13-.04.42.02.55.04.12.1.19.07.19-.02.06-.07.05-.11-.03-.05-.16-.06-.4-.06-.5-.02-.13-.03-.42-.12-.49-.03-.03-.05-.04-.08-.04zm1.24 0c-.02 0-.04 0-.06.02-.07.02-.14.08-.12.2l.23 1.5c.02.07-.04.15-.1.14-.12-.08-.15-.24-.35-.23-.14 0-.3.16-.32.3a.76.76 0 0 0 0 .36c.1.12.22.11.32.08.09-.03.16-.12.2-.1.01.04 0 .32-.42.53-.25.12-.45.14-.56-.06-.06-.13 0-.62-.15-.5-.5 1.25 1.13 1.42 1.31.05.02-.04.05-.08.08-.07 0 0 .02.02.02.05-.04 1.24-1.26 1.33-1.46.93-.05-.09-.07-.3-.07-.42-.01-.07-.03-.11-.05-.13-.05-.04-.12.06-.13.23-.02.13-.02.17-.02.3.07.98 1.63.56 1.89-.25.13-.42 0-.74.04-.78h.01c.16.17.37.02.42-.04.02-.03.07-.05.11 0 .12.08.33.04.38-.12.02-.15.05-.3.05-.46-.08.02-.14.04-.17.07l-.01.02-.02.13v.01l-.02.02c-.03.01-.08 0-.08-.04-.04-.17-.2-.19-.28.08-.07.05-.18.06-.2-.02.02-.18-.05-.2-.2-.12l-.13-1.04c.06 0 .11.04.17-.03-.06-.18-.19-.55-.26-.59l-.01-.01-.01-.01h-.01-.02zm4.84 0c-.06 0-.13.04-.1.11-.02.05.13.2.16.27.04.12-.04.24 0 .25.05.02.1-.12.13-.25.02-.11-.05-.33-.16-.38h-.03zm-3.77.13c.03 0 .06.02.08.06.02.04 0 .08-.02.08-.03.01-.07-.01-.09-.05-.01-.04 0-.08.02-.09h.01zm7 .18c-.06 0-.12.04-.1.13-.01.04.12.2.15.29.02.06-.03.25 0 .27.04.02.1-.14.12-.28 0-.08-.05-.36-.15-.4h-.02zm-3.87.1l.01.07.03.15a1.77 1.77 0 0 0-.1-.13c-.1-.12 0-.08.06-.1zm.89.44c-.02 0-.04.02-.05.05l-.01.06c-.01 0-.05 0-.05-.05l-.02-.05h-.02c-.02 0-.02 0-.03.02l-.01.04c0 .02 0 .03-.02.03h-.03l-.01-.03-.01-.05-.03-.02c-.07 0-.07.08-.07.1 0 .01 0 .15.08.19.13.05.35.03.34-.17v-.09c-.01-.03-.04-.04-.06-.03zm-4.07.04l-.06.01c-.1.06-.14.23-.08.33.06.1.16.06.18.06.1.02.16-.2.16-.2s0-.05-.12.06c-.05 0-.06-.01-.07-.04A.25.25 0 0 1 4.95 5c.02-.03 0-.05-.02-.05zm5.75.02c-.06 0-.12.04-.14.12 0 .05.03.07.02.12 0 .02-.03.04-.1.01.02-.01-.03-.08-.03-.08-.05-.03-.11 0-.15.03a.23.23 0 0 0-.02.19c.07.12.3.34.42.34l.02-.36c0-.04 0-.07.04-.08.04-.01.1.03.1 0-.01-.08-.02-.19-.06-.24a.12.12 0 0 0-.1-.05zm-4.76.4l-.06.06c-.06.06-.06.1-.06.22l.18.47c.06.2.1.42.07.64-.13.28-.39.53-.64.67-.13.04-.24.03-.27 0a.17.17 0 0 1-.07-.16c.2-.15.45-.27.64-.67.06-.15.08-.24.02-.48a.46.46 0 0 0-.11-.22c.04-.02.13.05.15 0a.72.72 0 0 0-.19-.33c-.07-.07-.16-.08-.23-.02-.07.05-.09.2-.05.34.04.1.15.12.23.33 0 0 .03.15-.01.2-.03.11-.46.44-.49.46v-.06l.02-.23c-.14.09-.2.37-.22.45-.35.24-.75.42-.98.67-.12.19.83-.22.94-.27.02.03.02.11.09.18.1.14.3.22.5.17.35-.13.55-.36.75-.62.03-.04.07-.07.11-.04.14.3.54.53 1.05.55.12-.14.06-.21.02-.24-.02-.01-.26-.1-.3-.2-.02-.09.04-.16.15-.22.33-.04.66-.09.97-.19 0-.1.06-.26.1-.33l.06-.06v-.01l-.05-.03H7.19a.1.1 0 0 1-.03-.02v-.01l.03-.03c.25-.03.7-.1.72-.53 0-.23-.1-.37-.37-.41-.2.01-.34.2-.32.42 0 .06.02.17-.04.18-.38.04-.8.28-.82.46h-.02c-.02-.01-.06-.05-.05-.11-.02-.3-.11-.64-.27-.9-.05-.05-.08-.08-.1-.08zm1 .16a.07.07 0 0 0-.04.05l-.01.06c-.01.01-.05 0-.05-.05l-.02-.04-.02-.01c-.02 0-.02 0-.03.02l-.01.04c0 .02-.01.03-.02.03h-.03l-.02-.03v-.05l-.03-.01c-.07 0-.07.07-.07.1 0 0 0 .14.08.18.12.06.41.02.34-.17v-.09c-.02-.03-.04-.04-.06-.03zM11 5.7l-.58.4c-.06.06-.03.23 0 .21.04.02.6-.37.6-.41.02 0 .03-.2-.02-.2zm-3.53.06c.02 0 .05 0 .08.02.04.02.07.06.06.09v.01c-.02.02-.07.02-.11 0-.05-.03-.07-.07-.07-.1v-.01h.01l.03-.02zm-4.92.1c-.29 0-.72.38-.73.59l.92-.44c-.05-.08 0-.15-.19-.15zm.94.13c.03 0 .06.01.08.05a.1.1 0 0 1-.02.1h-.09c-.03 0-.05 0-.07-.03-.01-.03.02-.07.03-.1A.09.09 0 0 1 3.48 6h.01zm7.4.11c-.05 0-.1.06-.08.14-.01.04.07.2.1.29.02.06-.03.23.01.25.04.02.14-.1.14-.26 0-.08-.03-.37-.13-.41h-.04zM4.6 6.4c-.05 0-.09.02-.07.09 0 .04.13.1.14.2.02.05-.03.2 0 .21.05.02.1-.1.11-.2.01-.06-.04-.26-.14-.3H4.6zm1.88.25h.01c.12.03.3.04.44.05.13.01.19.1.07.15-.11.04-.22.07-.22.23.01.08 0 .12 0 .14h-.01v.01h-.01l-.1-.03c-.07-.05-.26-.17-.3-.43 0-.06.05-.11.12-.12zm-4.6.2l-.03.05c-.18.27-.2.69-.1.8a.2.2 0 0 0 .2.07c.1-.04.16-.26.13-.34-.04-.06-.07-.07-.1-.02-.08.15-.11.05-.12-.04 0-.16 0-.32.03-.44v-.08zm5.9.36l-.04.01s-.12.08-.16.14c-.02.02-.02.04-.01.07.01.04.05.03.08 0 .05 0 .08.03.07.1-.02.07.01.1.01.1s.05.04.1.01c.12-.04.2-.09.36-.12.05 0 .04-.12-.03-.12a.4.4 0 0 0-.26.08c-.05 0-.06-.03-.07-.06-.02-.07.03-.12.02-.18 0 0-.03-.02-.07-.02zm3.78.14l-.08.01c-.04 0-.05.03-.06.07 0 .06.05.06.09.09.02.03.04.06 0 .1l-.11.1c-.02.03-.03.08.03.1.1.02.35-.13.35-.14.04-.03.02-.08.02-.08-.02-.03-.08-.01-.11-.02-.02 0-.07 0-.05-.05a.32.32 0 0 0 .05-.09c.01-.03 0-.06-.06-.08h-.07zm-1.45 3.86c.27.02.52 0 .79.02.04.04.02.12 0 .13h-.25v-.01c-.02-.06-.17-.06-.2-.01h-.01v.02c-.12.02-.22 0-.34 0-.04-.05-.03-.13 0-.15z"
+                fill="#fff"></path>
+            </svg>
+            <strong>Saudi Riyal </strong> (SAR) <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buy: <strong>74.20</strong> | Sell: <strong>75.60</strong>
+          </span>
+
+          <span class="item">
+            <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg" class="_525d90ba">
+              <clipPath id="r">
+                <circle cx="7.5" cy="7.5" r="7.5"></circle>
+              </clipPath>
+              <g clip-path="url(#r)">
+                <path fill="#00247D" d="M0 0h15v15H0z"></path>
+                <path fill="#00247D" d="M0 0h7.5v7.5H0z"></path>
+                <path fill="#fff" d="M3 0h1.5v7.5H3z"></path>
+                <path fill="#fff" d="M0 3h7.5v1.5H0z"></path>
+                <path fill="#CF142B" d="M3.25 0h1v7.5h-1z"></path>
+                <path fill="#CF142B" d="M0 3.25h7.5v1H0z"></path>
+                <path fill="#fff"
+                  d="M4 9.15l.33.8h.76l-.65.44.24.8L4 10.7l-.68.5.24-.8-.65-.45h.76zM10.6 2.3l.23.56h.53l-.46.3.17.56-.47-.34-.47.34.17-.56-.46-.3h.53zM11.9 4.4l.17.42h.4l-.34.23.12.42-.35-.26-.35.26.12-.42-.34-.23h.4zM12.2 6.2l.23.56h.53l-.46.3.17.56-.47-.34-.47.34.17-.56-.46-.3h.53zM10.8 8.2l.23.56h.53l-.46.3.17.56-.47-.34-.47.34.17-.56-.46-.3h.53zM9.4 10.2l.23.56h.53l-.46.3.17.56-.47-.34-.47.34.17-.56-.46-.3h.53z">
+                </path>
+              </g>
+            </svg>
+            <strong>Australian Dollar </strong> (AUD) <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buy: <strong>185.40</strong> | Sell: <strong>188.00</strong>
+          </span>
+
+          <span class="item">
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="_525d90ba">
+              <g clip-path="url(#clip0_1450_4349)">
+                <rect width="15" height="15" rx="7.5" fill="#fff"></rect>
+                <path
+                  d="M7.7 11.62h-.4l.1-1.65c0-.09-.05-.1-.2-.1l-1.66.2s.31-.4.31-.61C5.85 9.25 4 7.9 4 7.9s.41-.1.51-.2c.1-.1-.4-1.24-.4-1.24s1.04.41 1.13.3c.08-.1.2-.5.2-.5s.82.92 1.03.92c.2 0-.41-2.26-.41-2.26s.51.4.72.4c.2 0 .72-1.33.72-1.33s.51 1.34.62 1.34c.1 0 .82-.41.82-.41s-.51 2.16-.41 2.26c.1.1 1.03-.93 1.03-.93s.1.42.2.52c.1.1 1.14-.3 1.14-.3s-.52 1.12-.41 1.23c.1.1.51.2.51.2S9.15 9.25 9.15 9.46c0 .2.2.61.2.61l-1.54-.2c-.13-.04-.17-.01-.2.1l.1 1.65zM13 0h5v15h-5zM-3 0h5v15h-5z"
+                  fill="#F93939"></path>
+              </g>
+              <defs>
+                <clipPath id="clip0_1450_4349">
+                  <rect width="15" height="15" rx="7.5" fill="#fff"></rect>
+                </clipPath>
+              </defs>
+            </svg>
+            <strong>Canadian Dollar </strong> (CAD) <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buy: <strong>200.30</strong> | Sell: <strong>203.10</strong>
+          </span>
+
+          <span class="item">
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="_525d90ba">
+              <g clip-path="url(#clip0_1450_4344)">
+                <rect width="15" height="15" rx="7.5" fill="#F93939"></rect>
+                <path d="M19 0H2a2 2 0 0 0-2 2v11c0 1.1.9 2 2 2h17a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" fill="#F93939">
+                </path>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M5.5 7.23L4.03 8l.28-1.63L3.12 5.2l1.64-.24.74-1.5.73 1.5 1.65.24-1.2 1.16L6.98 8 5.5 7.23zM9 3h1v1H9V3zm1 2h1v1h-1V5zm0 2h1v1h-1V7zM9 9h1v1H9V9z"
+                  fill="#FFDA2C"></path>
+              </g>
+              <defs>
+                <clipPath id="clip0_1450_4344">
+                  <rect width="15" height="15" rx="7.5" fill="#fff"></rect>
+                </clipPath>
+              </defs>
+            </svg>
+            <strong> Chinese Yuan </strong> (RMB)<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buy: <strong> 40.00 </strong> | Sell: <strong>41.00</strong>
+          </span>
+        </marquee>
+
+        <div class="banner-content">
+          <div class="left-logo">
+            <img src="./assets/yellow-div/linkLogo.f825984a40705abc3517d5dce58ef5f1.webp" alt="Link Exchange Logo" />
+          </div>
+
+          <div class="center-text">
+            <h1>CURRENCY EXCHANGE</h1>
+            <p>Send & Receive Money across borders with Link Exchange</p>
+          </div>
+
+          <div class="right-logos">
+            <img class="wu" src="./assets/yellow-div/westernUnionLogo.f83a35b0922e8f5793a2e5daf55ecd57.webp"
+              alt="Western Union" />
+            <div class="small-logos">
+              <img src="./assets/yellow-div/moneyGramLogo.132da8e6f5e7f64407da2aaa42e4ee60.webp" alt="MoneyGram" />
+              <img src="./assets/yellow-div/riaLogo.cb9578ec0c46b82a1ab797f559eec823.webp" alt="Ria" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="category-grid">
+      <!-- Your category items here -->
+      <div class="category-item">
+        <div class="_948d9e0a b2e0090c _371e9918">
+          <img src="./assets/mobiles.73f961c6ad58605c032eb7c2cf12aeaa.png" class="dab7f421" alt="Mobiles" />
+        </div>
+        <span class="af339672">Mobiles </span>
+      </div>
+
+      <div class="category-item">
+        <div class="_948d9e0a b2e0090c _371e9918">
+          <img src="./assets/vehicles.354a5ebfb7f21e87991a277dd4b40f4b.png" class="dab7f421" alt="Vehicles" />
+        </div>
+        <span class="af339672">Vehicles</span>
+      </div>
+      <div class="category-item">
+        <div class="_948d9e0a b2e0090c _371e9918">
+          <img src="./assets/property-for-sale.69b01e8dafc182fa3bd469d0ed4fc801.png" class="dab7f421"
+            alt="Property for Sale" />
+        </div>
+        <span class="af339672">Property for Sale</span>
+      </div>
+      <div class="category-item">
+        <div class="_948d9e0a b2e0090c _371e9918">
+          <img src="./assets/property-for-rent.49f99cc528b9b88da4f33fbe1f0b3346.png" class="dab7f421"
+            alt="Property for Rent" />
+        </div>
+        <span class="af339672">Property for Rent</span>
+      </div>
+      <div class="category-item">
+        <div class="_948d9e0a b2e0090c _371e9918">
+          <img src="./assets/electronics-home-appliances.0a30101e6fd7d9ccc8cd6b85b9b44cee.png" class="dab7f421"
+            alt="Electronics &amp; Home Appliances" />
+        </div>
+        <span class="af339672">Electronics &amp; Home Appliances</span>
+      </div>
+      <div class="category-item">
+        <div class="_948d9e0a b2e0090c _371e9918">
+          <img src="./assets/bikes.0a5064ae987f3bd72801b7bc2c3b6e02.png" class="dab7f421" alt="Bikes" />
+        </div>
+        <span class="af339672">Bikes</span>
+      </div>
+      <div class="category-item">
+        <div class="_948d9e0a b2e0090c _371e9918">
+          <img src="./assets/business-industrial-agriculture.2ec28979a1bde0183c777a0ce51b37c6.png" class="dab7f421"
+            alt="Business, Industrial &amp; Agriculture" />
+        </div>
+        <span class="af339672">Business, Industrial &amp; Agriculture</span>
+      </div>
+      <div class="category-item">
+        <div class="_948d9e0a b2e0090c _371e9918">
+          <img src="./assets/services.23d8eb1535f319324813848887961a59.png" class="dab7f421" alt="Services" />
+        </div>
+        <span class="af339672">Services</span>
+      </div>
+      <div class="category-item">
+        <div class="_948d9e0a b2e0090c _371e9918">
+          <img src="./assets/jobs.dc882b8ff65e94850cc12f5abd605420.png" class="dab7f421" alt="Jobs" />
+        </div>
+        <span class="af339672">Jobs</span>
+      </div>
+      <div class="category-item">
+        <div class="_948d9e0a b2e0090c _371e9918">
+          <img src="./assets/animals.476fa9caaf88a12dfbcd6db4c8c6f17a.png" class="dab7f421" alt="Animals" />
+        </div>
+        <span class="af339672">Animals</span>
+      </div>
+      <div class="category-item">
+        <div class="_948d9e0a b2e0090c _371e9918">
+          <img src="./assets/furniture-home-decor.47a1998de5f4a8a9e84702dcb40bb313.png" class="dab7f421"
+            alt="Furniture &amp; Home Decor" />
+        </div>
+        <span class="af339672">Furniture &amp; Home Decor</span>
+      </div>
+      <div class="category-item">
+        <div class="_948d9e0a b2e0090c _371e9918">
+          <img src="./assets/fashion-beauty.6ef7c1f060c92b55a6b28bfcfb16a1d2.png" class="dab7f421"
+            alt="Fashion &amp; Beauty" />
+        </div>
+        <span class="af339672">Fashion &amp; Beauty</span>
+      </div>
+      <div class="category-item">
+        <div class="">
+          <img src="./assets/books-sports-hobbies.9406daf905b451fa283048652f414054.png" class="dab7f421"
+            alt="Books, Sports &amp; Hobbies" />
+        </div>
+        <span class="af339672">Books, Sports &amp; Hobbies</span>
+      </div>
+      <div class="category-item">
+        <div class="_948d9e0a b2e0090c _371e9918">
+          <img src="./assets/kids.5de42a58bc91f81fa22ccc401d7ac285.png" class="dab7f421" alt="Kids" />
+        </div>
+        <span class="af339672">Kids</span>
+      </div>
+    </div>
+
+    <section class="animage">
+      <img src="https://s0.2mdn.net/simgad/13796089286495887774" alt="Advertisement" border="0" width="320" height="100"
+        style="display: block" />
+    </section>
+
+    <div class="section-head">
+      <div class="section-title">Recently viewed</div>
+      <span href="#" class="view-more">View More</span>
+    </div>
+
+    <div class="carouselGroupContentStart">
+      <button id="prevBtn" class="carousel-arrow" aria-label="Previous items">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+          <path d="M15 6L9 12L15 18" stroke="#002f34" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+
+      <div id="track">
+        <!-- 1 -->
+        <div class="carousel-item">
+          <article class="_84ba2e24">
+            <div class="c301dc6f2">
+              <img src="https://images.olx.com.pk/thumbnails/579063260-800x600.webp" class="f79152f1" alt="Job offer" />
+            </div>
+
+            <div class="_62ba04e1">
+              <div class="_43b7c6f5">
+                <div aria-label="Price" class="_948d9e0a _0121087f _371e9918">
+                  <span class="cb7e1f7d">Rs 25,000</span>
+                </div>
+
+                <div class="_01713613 _3920297b" aria-label="Title">
+                  <p class="_6aaa9e3e">
+                    Female Sale Assistant / Job Offer / Job Hirring
+                  </p>
+                </div>
+
+                <div class="gf41cc9fb">
+                  <span class="_43b2324f">Patel para, Karachi</span>
+                  <span class="_19b2b172">Today</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- 2 -->
+        <div class="carousel-item">
+          <article class="_84ba2e24">
+            <div class="c301dc6f2">
+              <img src="https://images.olx.com.pk/thumbnails/582264776-800x600.webp" class="f79152f1" alt="Alto" />
+            </div>
+            <div class="_62ba04e1">
+              <div class="_43b7c6f5">
+                <div class="_948d9e0a _0121087f _371e9918">
+                  <span class="cb7e1f7d">Rs 1.55 Lac</span>
+                </div>
+                <div class="_01713613 _3920297b">
+                  <p class="_6aaa9e3e">
+                    File prsnt. Lahore rgstrd. Biomtrc avlbl. Spcial rims. AC
+                    on, 660cc. Low ptrl cnsmption
+                  </p>
+                </div>
+                <div class="gf41cc9fb">
+                  <span class="_43b2324f">Katlung Road, Mardan</span><span class="_19b2b172">6 hours ago</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- 3 -->
+        <div class="carousel-item">
+          <article class="_84ba2e24">
+            <div class="c301dc6f2">
+              <img src="https://images.olx.com.pk/thumbnails/581721537-800x600.webp" class="f79152f1" alt="Almirah" />
+            </div>
+            <div class="_62ba04e1">
+              <div class="_43b7c6f5">
+                <div class="_948d9e0a _0121087f _371e9918">
+                  <span class="cb7e1f7d">Rs 12,000</span>
+                </div>
+                <div class="_01713613 _3920297b">
+                  <p class="_6aaa9e3e">Almirah dising sherwani.</p>
+                </div>
+                <div class="gf41cc9fb">
+                  <span class="_43b2324f">Mehmoodabad, Karachi</span><span class="_19b2b172">Yesterday</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- 4 -->
+        <div class="carousel-item">
+          <article class="_84ba2e24">
+            <div class="c301dc6f2">
+              <img src="https://images.olx.com.pk/thumbnails/573872547-800x600.webp" class="f79152f1"
+                alt="Walkie Talkie" />
+            </div>
+            <div class="_62ba04e1">
+              <div class="_43b7c6f5">
+                <div class="_948d9e0a _0121087f _371e9918">
+                  <span class="cb7e1f7d">Rs 12,500</span>
+                </div>
+                <div class="_01713613 _392029">
+                  <p class="_6aaa9e3e">
+                    Walkie Talkie | Wireless Set Baofeng uv 82 | wireless
+                  </p>
+                </div>
+                <div class="gf41cc9fb">
+                  <span class="_43b2324f">Gulberg, Lahore</span><span class="_19b2b172">Yesterday</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- 5 -->
+        <div class="carousel-item">
+          <article class="_84ba2e24">
+            <div class="c301dc6f2">
+              <a href="#">
+                <div class="_85af4b02"></div>
+              </a>
+              <img src="https://images.olx.com.pk/thumbnails/581888542-800x600.webp" class="f79152f1" alt="Bike" />
+            </div>
+            <div class="_62ba04e1">
+              <div class="_43b7c6f5">
+                <div class="_948d9e0a _0121087f _371e9918">
+                  <span class="cb7e1f7d">Rs 60,000</span>
+                </div>
+                <div class="_01713613 _3920297b">
+                  <p class="_6aaa9e3e">
+                    All ok in bike, running papar nahi hai.
+                  </p>
+                </div>
+                <div class="gf41cc9fb">
+                  <span class="_43b2324f">Karachi</span><span class="_19b2b172">Yesterday</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- 6 -->
+        <div class="carousel-item">
+          <article class="_84ba2e24">
+            <div class="c301dc6f2">
+              <a href="#">
+                <div class="_85af4b02"></div>
+              </a>
+              <img src="https://images.olx.com.pk/thumbnails/582267865-800x600.webp" class="f79152f1" alt="Car" />
+            </div>
+            <div class="_62ba04e1">
+              <div class="_43b7c6f5">
+                <div class="_948d9e0a _0121087f _371e9918">
+                  <span class="cb7e1f7d">Rs 1 Lac</span>
+                </div>
+                <div class="_01713613 _3920297b">
+                  <p class="_6aaa9e3e">
+                    2 jaga patchning hai, baki ok hai. Apnay naam par hai car.
+                  </p>
+                </div>
+                <div class="gf41cc9fb">
+                  <span class="_43b2324f">Sargodha to Sillanwali Road, Sargodha</span>
+                  <span class="_19b2b172"> 3 hours ago</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- 7 -->
+        <div class="carousel-item">
+          <article class="_84ba2e24">
+            <div class="c301dc6f2">
+              <a href="#">
+                <div class="_85af4b02"></div>
+              </a>
+              <img src="https://images.olx.com.pk/thumbnails/582272507-800x600.webp" class="f79152f1" alt="Job offer" />
+            </div>
+            <div class="_62ba04e1">
+              <div class="_43b7c6f5">
+                <div class="_948d9e0a _0121087f _371e9918">
+                  <span class="cb7e1f7d">Rs 20,000</span>
+                </div>
+                <div class="_01713613 _3920297b">
+                  <p class="_6aaa9e3e">
+                    Need pizza and fast food chef and helper.
+                  </p>
+                </div>
+                <div class="gf41cc9fb">
+                  <span class="_43b2324f">Karachi</span><span class="_19b2b172">3 hours ago</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- 8 -->
+        <div class="carousel-item">
+          <article class="_84ba2e24">
+            <div class="c301dc6f2">
+              <a href="#">
+                <div class="_85af4b02"></div>
+              </a>
+              <img src="https://images.olx.com.pk/thumbnails/467188989-800x600.webp" class="f79152f1" alt="Job offer" />
+            </div>
+            <div class="_62ba04e1">
+              <div class="_43b7c6f5">
+                <div class="_948d9e0a _0121087f _371e9918">
+                  <span class="cb7e1f7d">Rs 20,000</span>
+                </div>
+                <div class="_01713613 _3920297b">
+                  <p class="_6aaa9e3e">
+                    Driver and loader required on urgent basis.
+                  </p>
+                </div>
+                <div class="gf41cc9fb">
+                  <span class="_43b2324f">Korangi Industrial Area, Karachi</span><span class="_19b2b172">1 hour
+                    ago</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <button id="nextBtn" class="carousel-arrow" aria-label="Next items">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+          <path d="M9 6L15 12L9 18" stroke="#002f34" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <script>
+    // Mobile Menu Functionality
+    document.addEventListener("DOMContentLoaded", function () {
+      const hamburgerMenu = document.querySelector(".hamburger-menu");
+      const closeMenu = document.querySelector("#closeMenu");
+      const mobileMenu = document.querySelector("#mobileMenu");
+      const menuOverlay = document.querySelector("#menuOverlay");
+      const mobileNavLinks = document.querySelectorAll(
+        ".mobile-nav-links li"
+      );
+
+      // document.addEventListener('contextmenu', function (e) {
+      //   e.preventDefault();
+      // });
+
+      document.addEventListener("keydown", function (e) {
+        const key = e.key.toLowerCase();
+
+        if (e.ctrlKey && e.shiftKey && key === "i") e.preventDefault();
+        if (e.ctrlKey && e.shiftKey && key === "c") e.preventDefault();
+        if (e.ctrlKey && e.shiftKey && key === "j") e.preventDefault();
+        if (key === "f12") e.preventDefault();
+
+        if (e.ctrlKey && key === "u") e.preventDefault();
+
+        if (e.ctrlKey && key === "s") e.preventDefault();
+        if (e.ctrlKey && key === "p") e.preventDefault();
+
+        if (e.ctrlKey && (key === "c" || key === "v" || key === "x")) {
+          e.preventDefault();
+        }
+      });
+
+      function openMobileMenu() {
+        mobileMenu.classList.add("active");
+        menuOverlay.classList.add("active");
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeMobileMenu() {
+        mobileMenu.classList.remove("active");
+        menuOverlay.classList.remove("active");
+        document.body.style.overflow = "auto";
+      }
+
+      if (hamburgerMenu) {
+        hamburgerMenu.addEventListener("click", openMobileMenu);
+      }
+
+      if (closeMenu) {
+        closeMenu.addEventListener("click", closeMobileMenu);
+      }
+
+      if (menuOverlay) {
+        menuOverlay.addEventListener("click", closeMobileMenu);
+      }
+
+      // Close menu when clicking on any link
+      mobileNavLinks.forEach((link) => {
+        link.addEventListener("click", closeMobileMenu);
+      });
+
+      // Carousel Functionality
+      (function () {
+        const track = document.getElementById("track");
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+        const carouselContainer = document.querySelector(
+          ".carouselGroupContentStart"
+        );
+
+        if (!track || !prevBtn || !nextBtn || !carouselContainer) return;
+
+        let position = 0;
+
+        // Calculate how many items fit in the viewport
+        function getVisibleItemsCount() {
+          const containerWidth = carouselContainer.offsetWidth - 100;
+          const itemWidth =
+            parseInt(
+              getComputedStyle(document.documentElement).getPropertyValue(
+                "--card-width"
+              )
+            ) + 20;
+          return Math.floor(containerWidth / itemWidth);
+        }
+
+        // Calculate maximum scroll position
+        function getMaxScroll() {
+          const itemWidth =
+            parseInt(
+              getComputedStyle(document.documentElement).getPropertyValue(
+                "--card-width"
+              )
+            ) + 20;
+          const totalItems = track.children.length;
+          const visibleItems = getVisibleItemsCount();
+          return Math.max(0, (totalItems - visibleItems) * itemWidth);
+        }
+
+        function updateButtons() {
+          const maxScroll = getMaxScroll();
+
+          prevBtn.disabled = position === 0;
+          nextBtn.disabled = position <= -maxScroll;
+
+          prevBtn.style.opacity = prevBtn.disabled ? 0.3 : 0.7;
+          nextBtn.style.opacity = nextBtn.disabled ? 0.3 : 0.7;
+        }
+
+        function slide(direction) {
+          const itemWidth =
+            parseInt(
+              getComputedStyle(document.documentElement).getPropertyValue(
+                "--card-width"
+              )
+            ) + 20;
+          const maxScroll = getMaxScroll();
+
+          const scrollAmount = getVisibleItemsCount() * itemWidth;
+
+          position = position - direction * scrollAmount;
+          position = Math.min(0, Math.max(-maxScroll, position));
+
+          track.style.transform = `translateX(${position}px)`;
+          updateButtons();
+        }
+
+        prevBtn.addEventListener("click", () => slide(-1));
+        nextBtn.addEventListener("click", () => slide(1));
+
+        window.addEventListener("resize", () => {
+          const maxScroll = getMaxScroll();
+          position = Math.min(0, Math.max(-maxScroll, position));
+          track.style.transform = `translateX(${position}px)`;
+          updateButtons();
+        });
+
+        updateButtons();
+      })();
+    });
+  </script>
+  <!-- <script src="https://kit.webawesome.com/c3f6af09159d4bde.js" crossorigin="anonymous"></script> -->
+</body>
+
+</html>
